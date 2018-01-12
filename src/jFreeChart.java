@@ -20,7 +20,7 @@ public class jFreeChart extends ApplicationFrame {
 				"Years", "Number of Schools", createDataset(),
 				PlotOrientation.VERTICAL, true, true, false);
 
-		lineChart.getXYPlot().getDomainAxis().setInverted(true);
+		//lineChart.getXYPlot().getDomainAxis().setInverted(true);
 		
 		ChartPanel chartPanel = new ChartPanel(lineChart);
 		//chartPanel.getChart().getXYPlot().getRangeAxis().setInverted(true);
