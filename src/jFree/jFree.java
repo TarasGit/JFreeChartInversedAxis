@@ -30,9 +30,11 @@ public class jFree {
 
     public static void main(String[] args) {
         XYSeries series = new XYSeries("Data");
-        for (int i = 0; i < COUNT; i++) {
-            series.add(i, r.nextGaussian());
-        }
+//        for (int i = 0; i < COUNT; i++) {
+//            series.add(i, r.nextGaussian());
+//        }
+        series.add(2,2);
+        series.add(3,3);
         XYSeriesCollection data = new XYSeriesCollection(series);
         final JFreeChart chart = ChartFactory.createXYLineChart("TickUnits",
             "X", "Y", data, PlotOrientation.VERTICAL, true, true, false);
